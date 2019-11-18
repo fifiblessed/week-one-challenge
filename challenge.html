@@ -9,22 +9,55 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <header>Javascript Documentation</header>
-        <a href="#introduction" class="nav-link">introduction</a>
-        <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
-        <a href="#Hello_World" class="nav-link">Hello World</a>
-        <a href="#Variables" class="nav-link">Variables</a>
-        <a href="#Declaring_Variables" class="nav-link">Declaring Variables</a>
-        <a href="#Variable_Scope" class="nav-link">Variable_scope</a>
-        <a href="#data_types" class="nav-link">Data types</a>
-        <a href="#while_Statements" class="nav-link">while_statement</a>
-        <a href="#Function_Declarations" class="nav-link">Function_declarations</a>
-        <a href="#Reference" class="nav-link">Reference</a>
-    </nav>
-    <main id="main-doc">
-        <section class="main-section"> 
-            <header id="introduction">introduction</header> 
+    <section id="main" >
+        <div id="nav-bar">
+            <div id="main-doc">
+                <h1>JS Documentation</h1>
+            </div> 
+            <div>       
+                <nav id="nav-link">
+                    <ul>
+                        <li >
+                            <a href="#introduction">
+                                introduction
+                            </a>
+                        </li>
+                        <li >
+                            <a href="#what_you_should_already_know">What you should already know</a>
+                        </li>
+                        <li >
+                            <a href="#hello">hello_world</a>
+                        </li>
+                        <li >
+                            <a href="#variables">variables</a>
+                        </li>
+                        <li >
+                            <a href="#declaring">declaring_variables</a>
+                        </li>
+                        <li >
+                            <a href="#scop">Variable_scope</a>
+                        </li>
+                        <li >
+                            <a href="#data">Data_types</a>
+                        </li>
+                        <li >
+                            <a href="#while">while_statements</a>
+                        </li>
+                        <li >
+                            <a href="#function">Function_declarations</a>
+                        </li>
+                        <li >
+                            <a href="#reference">refernce</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </section>
+    
+    <section id="content">
+        <section id="intro"> 
+            <h1>introduction</h1> 
             <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them. </p>
             <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
             <ul>
@@ -32,8 +65,8 @@
                 <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
             </ul>
         </section>
-        <section class="main-section">
-            <header id="What_you_should_already_know">What you should already know</header>
+        <section id="what">
+            <h1>What you should already know</h1>
             <p>This guide assumes you have the following basic background: </p>
                 <ul>
                     <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
@@ -41,8 +74,8 @@
                     <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
                 </ul>
              </section>
-        <section class="main-section"> 
-            <header id="Hello_world">Hello world</header>
+        <section id="hello"> 
+            <h1 id="Hello_world">Hello world</h1>
             <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
                 </p>
                 <code>function greetMe(yourName) {
@@ -53,20 +86,20 @@
                     </p>
         </section>
         <section class="main-section">
-            <header id="Variables">Variables</header> 
+            <h1 id="Variables">Variables</h1> 
             <p> You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
             <p> A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase)</p>
             <p> You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
             </p>
         </section>
         <section class="main-section"> 
-            <header id="Declaring_variables">Declaring variables</header>
+            <h1 id="Declaring_variables">Declaring variables</h1>
             <p>You can declare a variable in three ways: </p>
             <code>var x = 42.</code>
             <code>x = 42.</code>
         </section>
         <section class="main-section">
-            <header id="Variable_scope">Variable scope</header> 
+            <h1 id="Variable_scope">Variable scope</h1> 
             <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
             <code>if (true) {
                     var x = 5;
@@ -79,7 +112,7 @@
                       // ReferenceError: y is not defined</code>
         </section>
         <section class="main-section">
-            <header id="Data_types">Data types</header>
+            <h1 id="Data_types">Data types</h1>
             <p>The latest ECMAScript standard defines seven data types</p>
             <code>if (condition) {
                     statement_1;
@@ -88,7 +121,7 @@
                   }</code>
          </section>
         <section class="main-section">
-            <header id="while_statement">while statement</header>
+            <h1 id="while_statement">while statement</h1>
             <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
             <ul>
                 <li>After the first pass: n = 1 and x = 1</li>
@@ -97,7 +130,7 @@
             </ul>
          </section>
         <section class="main-section">
-            <header id="Function_declarations">Function declarations</header>
+            <h1 id="Function_declarations">Function declarations</h1>
         <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
             </p>
         <ul>
@@ -109,10 +142,10 @@
             <header id="Reference">Reference</header>
         <ul>
             <li>All the documentation in this page is taken from MDN</li></ul>
-            
+        </section>     
         
 
-    </main>
+    
 
     
 </body>
